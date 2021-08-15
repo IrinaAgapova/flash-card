@@ -1,0 +1,66 @@
+body {font-family: 'Gowun Dodum', sans-serif;
+    background-image: url("https://images.pexels.com/photos/46798/the-ball-stadion-football-the-pitch-46798.jpeg?auto=compress&cs=tinysrgb&h=2000&w=3000");
+    background-size: 100%;
+    background-position: right;
+}
+
+h1{
+    color: lightseagreen;
+    text-align: center;
+    border: 2px solid ;
+    background-color: lavender;
+    font-size: 35px;
+    border-radius: 7px;
+}
+
+.flex-item {
+    font-size: 23px;
+    width: 6em;
+    height: 6em;
+    border: 2px solid lightseagreen;
+    background-color: lavender;
+    border-radius: 7px;
+    text-align: center;
+    margin: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flex-container {
+    height: 45vh;
+    width: 45vw;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 10%;
+    position: absolute;
+
+}
+.card {
+    transform-style: preserve-3d;
+    transition: all 2s ease;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+   .front, .back {
+       position: absolute;
+       backface-visibility: hidden;
+       -webkit-backface-visibility: hidden;
+       -moz-backface-visibility: hidden;
+   }
+
+   .back {
+       transform: rotateY(180deg);
+       color: green;
+       z-index: 1;
+}
+   .front {
+       z-index: 2;
+   }
+
+
+
